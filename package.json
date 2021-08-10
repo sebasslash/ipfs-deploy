@@ -1,11 +1,15 @@
 {
-  "name": "ipfs-deploy",
+  "name": "ipfs-deploy-ts",
   "version": "0.0.1",
   "description": "A simple CLI utility to deploy static sites quick and easy to IPFS",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "install": "npm run build && npm i -g ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sebasslash/ipfs-deploy.git"
   },
   "bin": {
     "ipfs-deploy": "./dist/index.js"
@@ -17,6 +21,9 @@
     "ipfs-http-client": "^51.0.1",
     "yargs": "^17.1.0"
   },
+  "files": [
+    "dist/**/*"
+  ],
   "devDependencies": {
     "@types/node": "^16.4.13",
     "@types/yargs": "^17.0.2"
